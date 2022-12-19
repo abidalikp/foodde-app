@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llcontent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_corner"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="6">
+
+
+    <ImageView
+        android:id="@+id/imgResImage"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1.7"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.1">
+
+        <TextView
+            android:id="@+id/txtResName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:text="@string/restaurant_name"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtRs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResName"
+            android:layout_marginStart="8dp"
+            android:text="@string/Rs"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/txtCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtResName"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/txtRs"
+            android:text="@string/_200"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtResName"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/txtCost"
+            android:text="@string/person"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+
+        <TextView
+            android:id="@+id/txtResRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:drawablePadding="4dp"
+            android:text="@string/_4_5"
+            android:textColor="#ffca28"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResRating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_non_fav" />
+
+    </RelativeLayout>
+</LinearLayout>
